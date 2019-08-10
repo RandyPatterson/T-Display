@@ -1,7 +1,7 @@
 # TTGO T-Display
 demo for the LILYGO TTGO T-Display ESP32 1.14 Inch LCD Development Board For PlatformIO Arduino with the correct display driver installed
 
-![image](https://github.com/Xinyuan-LilyGO/TTGO-T-Display/blob/master/image/pinmap.jpg)
+![image](https://github.com/RandyPatterson/T-Display/blob/master/image/pinmap.jpg)
 
 
 ## Pinout
