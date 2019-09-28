@@ -95,7 +95,9 @@ void showVoltage()
         Serial.println(voltage);
         tft.fillScreen(TFT_BLACK);
         tft.setTextDatum(MC_DATUM);
-        tft.drawString(voltage,  tft.width() / 2, tft.height() / 2 );
+        tft.setRotation(1);
+        tft.setTextSize(2);
+        tft.drawString(voltage,  tft.width() / 2, tft.height() / 2);
     }
 }
 
@@ -111,6 +113,7 @@ void button_init()
         tft.fillScreen(TFT_BLACK);
         tft.setTextColor(TFT_GREEN, TFT_BLACK);
         tft.setTextDatum(MC_DATUM);
+        tft.setTextSize(1);
         tft.drawString("Press again to wake up",  tft.width() / 2, tft.height() / 2 );
         delay(6000);
         digitalWrite(TFT_BL, !r);
@@ -173,6 +176,7 @@ void setup()
         tft.fillScreen(TFT_GREEN);
         delay(500);
     }
+    showVoltage();
 
     button_init();
 
